@@ -1,0 +1,27 @@
+.container {
+    padding: 10px;
+}
+
+
+.home {
+    padding-top: 50px;
+    padding-left: 20px;
+    width: 50%;
+    height: 80vh;
+    background-color: #282A37;
+}
+
+.expense {
+    background-color:black ;
+    width: 50%;
+}
+
+
+/*
+- Primary, Lime Green: #51F129
+- Gray Labels - #8E909D
+- Input background - #323645
+- Add Panel - #282A37
+
+*/
+
