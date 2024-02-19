@@ -26,4 +26,4 @@
 
 <h3> 3) All Expenses Page </h3>
 
-![Ekran Alıntısı3](https://github.com/edakaraman/budget-app/assets/95571155/e8c25336-8a00-4ebf-87d6-99bf0282daee)
+![image](https://github.com/edakaraman/budget-app/assets/95571155/d1f9bb97-3c6c-4f93-b0eb-92524ef3faef)
