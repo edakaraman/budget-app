@@ -32,10 +32,14 @@ export default function ExpenseDetail({ onBudgetChange }) {
   };
 
   const handleAddClickWithToast = () => {
+    if (expenseName.trim() === '' || expenseAmount.trim() === '' || !selectedDate) {
+      toast.current.show({severity:'error', summary: 'Error', detail:'Please fill all fields', life: 3000});
+      return;
+    }
     toast.current.show({severity:'success', summary: 'Success', detail:'Expense added successfully', life: 3000});
     handleAddClick();
-}
-
+  };
+  
   const handleAddClick = () => {
     if (expenseName.trim() !== '' && expenseAmount.trim() !== '' && selectedDate) {
       const newExpense = {
@@ -50,10 +54,11 @@ export default function ExpenseDetail({ onBudgetChange }) {
       setSelectedDate(null);
     }
   };
-
+  
   const generateId = () => {
     return Math.floor(Math.random() * 1000000);
   };
+  
 
   return (
     <>
